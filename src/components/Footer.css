@@ -5,6 +5,7 @@
 }
 .nav-container{
     display: flex;
+    align-items: center;
     gap: 0.5rem;
 }
 .nav-container a{
@@ -15,6 +16,9 @@
     flex-direction: column;
 }
 .socials{
+    display: flex;
+    justify-content: center;
+    gap:0.5rem;
 }
 .socials img{
     height:30px;
