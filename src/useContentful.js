@@ -41,10 +41,8 @@ client.getEntries()
 
 }
 
-return 
-( <h2>{d}</h2>
- ) ( { getAuthors }
- ) 
+return  { getAuthors}
+
 
 }
 
