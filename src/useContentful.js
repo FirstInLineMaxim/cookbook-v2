@@ -1,7 +1,8 @@
 import {createClient} from "contentful";
+import {useState} from "react";
 
 const useContentful = () => {
-    let d= "f"
+    const [menuItem, setmenuItem] = useState();
 
 const client = createClient({
 space: "yynsd0hlzs9n",
@@ -36,12 +37,14 @@ console.log(`Error fetching authors: ${error}`)
 .then((contentType) => console.log(contentType))
 .catch(console.error)*/
 client.getEntries()
-.then((response) => console.log(response.items))
+.then((response) => setmenuItem((prev) => [...response.items]))
 .catch(console.error)
+
+
 
 }
 
-return  { getAuthors}
+return  menuItem
 
 
 }

@@ -1,17 +1,19 @@
 import { useEffect, useState} from "react" ;
 import logo from './logo.svg';
 import './App.css';
-import useContentful from "./useContentful"
+import useContentful from "./useContentful";
+import menuItem from "./useContentful"
+
 
 function App() {
   const [authors, setAuthors] = useState([]);
-  
+  let info = getAuthors();
 const { getAuthors } = useContentful();
-
+console.log(menuItem)
 useEffect(() => {
 getAuthors()/*.then((response) => console.log(response))*/
 
-})
+}, [])
   return (
     <div className="App">
       <header className="App-header">
