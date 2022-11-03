@@ -5,7 +5,7 @@ import useContentful from "./useContentful"
 
 function App() {
   const [authors, setAuthors] = useState([]);
-const {getAuthors} = useContentful()
+const { getAuthors } = useContentful();
 
 useEffect(() => {
 getAuthors().then((respnse) => console.log(response))

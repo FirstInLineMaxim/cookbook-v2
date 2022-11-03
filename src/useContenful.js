@@ -1,5 +1,5 @@
 import {createClient} from "contentful"
-const useContenful = () => {
+const useContentful = () => {
 
 const client = createClient({
 space: "yynsd0hlzs9n",
