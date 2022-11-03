@@ -1,6 +1,7 @@
 import {createClient} from "contentful";
 
 const useContentful = () => {
+    let d= "f"
 
 const client = createClient({
 space: "yynsd0hlzs9n",
@@ -40,7 +41,11 @@ client.getEntries()
 
 }
 
-return { getAuthors };
+return 
+( <h2>{d}</h2>
+ ) ( { getAuthors }
+ ) 
+
 }
 
 export default useContentful
