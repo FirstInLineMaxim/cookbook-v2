@@ -31,9 +31,13 @@ console.log(`Error fetching authors: ${error}`)
 .then((response) => console.log(response.items))
 .catch(console.error) */
 
-client.getContentType('cookBook')
+/*client.getContentType('cookBook')
 .then((contentType) => console.log(contentType))
+.catch(console.error)*/
+client.getEntries()
+.then((response) => console.log(response.items))
 .catch(console.error)
+
 }
 
 return { getAuthors };
