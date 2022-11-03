@@ -7,21 +7,33 @@ import useContentful from "./useContentful";
 
 function App() {
   const [authors, setAuthors] = useState([]);
- let d = {}
+ 
 const { getAuthors } = useContentful();
+
+function alltitle(x, s) {
+  let f = ""
+for (let i = 0; i<x.length;i++){
+f = x[i].title
+return f
+}
+}
 
 useEffect(() => {
 getAuthors().then((response) => setAuthors(response))
 
+
 }, [])
 
+let d = authors
+console.log(d)
+const list = alltitle(d)
 
 
   return (
     <div className="App">
       <header className="App-header">
         <h3>Hello Worlds! Heh</h3>
-        
+        <h2>{list}</h2>
         <img src={logo} className="App-logo" alt="logo" />
         <p> 
           Edit <code>src/App.js</code> and save to reload.
