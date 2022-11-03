@@ -36,15 +36,19 @@ console.log(`Error fetching authors: ${error}`)
 /*client.getContentType('cookBook')
 .then((contentType) => console.log(contentType))
 .catch(console.error)*/
-client.getEntries()
-.then((response) => setmenuItem((prev) => [...response.items]))
-.catch(console.error)
+const entries = await client.getEntries()
 
-
+const sanientries = entries.items.map((item) => {
+const title = item.fields.title;
+ return {...item.fields,
+            title
+}
+})
+return sanientries
 
 }
 
-return  menuItem
+return {getAuthors}
 
 
 }
