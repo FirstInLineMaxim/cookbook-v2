@@ -21,7 +21,7 @@ export default function Footer() {
                 <img src="https://img.icons8.com/external-kiranshastry-gradient-kiranshastry/344/external-placeholder-agriculture-and-farmer-kiranshastry-gradient-kiranshastry.png" alt="Facebook" />
                 <img src="https://img.icons8.com/external-kiranshastry-gradient-kiranshastry/344/external-placeholder-agriculture-and-farmer-kiranshastry-gradient-kiranshastry.png" alt="LinkedIn" />
             </div>
-            <input type={'text'}/>
+            <input type={'text'} placeholder={"E-mail"}/>
         </div>
 </div>
 </>
