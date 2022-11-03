@@ -8,7 +8,7 @@ function App() {
 const { getAuthors } = useContentful();
 
 useEffect(() => {
-getAuthors().then((respnse) => console.log(response))
+getAuthors().then((response) => console.log(response))
 
 })
   return (
