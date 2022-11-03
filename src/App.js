@@ -1,7 +1,16 @@
+import { useEffect, useState} from "react" ;
 import logo from './logo.svg';
 import './App.css';
+import useContentful from "./useContentful"
 
 function App() {
+  const [authors, setAuthors] = useState([]);
+const {getAuthors} = useContentful()
+
+useEffect(() => {
+getAuthors().then((respnse) => console.log(response))
+
+})
   return (
     <div className="App">
       <header className="App-header">
