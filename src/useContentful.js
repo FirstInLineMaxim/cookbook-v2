@@ -26,7 +26,7 @@ console.log(`Error fetching authors: ${error}`)
 }
 
 }
-
+return {getAuthors}
 }
 
 export default useContentful
