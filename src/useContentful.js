@@ -11,22 +11,32 @@ host: "preview.contentful.com"
 })
 
 const getAuthors = async () => {
-try {
+/* try {
 const entries = await client.getEntries({
 content_type: "authors",
 select: "fields",
-/* "fields.subject": "React" */
+/* "fields.subject": "React" 
 order : "fields.name"
 });
+console.log(entries)
 return entries
 
 } catch (error) {
 console.log(`Error fetching authors: ${error}`)
 
 }
+*/
 
+/*client.getContentTypes()
+.then((response) => console.log(response.items))
+.catch(console.error) */
+
+client.getContentType('cookBook')
+.then((contentType) => console.log(contentType))
+.catch(console.error)
 }
-return {getAuthors}
+
+return { getAuthors };
 }
 
 export default useContentful

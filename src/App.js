@@ -9,7 +9,7 @@ function App() {
 const { getAuthors } = useContentful();
 
 useEffect(() => {
-getAuthors().then((response) => console.log(response))
+getAuthors()/*.then((response) => console.log(response))*/
 
 })
   return (
