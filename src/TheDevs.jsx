@@ -3,6 +3,6 @@ import './devs.css'
 
 export default function TheDevs() {
   return (
-    <div>TheDevs</div>
+    <div>TheDevs & The Tech</div>
   )
 }
