@@ -7,9 +7,12 @@ import './Head.css'
 function Head () {
     return (
         <div className="Header">
-        <NavLink to="main" >main</NavLink>
-    <NavLink to="/" >App</NavLink>
-    <NavLink to="main/:food" >food?</NavLink> 
+    <NavLink to="main" className="nav" >Main</NavLink>
+    <NavLink to="/" className="nav" >App</NavLink>
+    <select>
+        <option value="0">Select Food:</option>
+        <option value="1">Pork-Belly</option>
+        </select>
     </div>
     );
 }

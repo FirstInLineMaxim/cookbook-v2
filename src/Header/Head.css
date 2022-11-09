@@ -1,6 +1,21 @@
 .Header {
     display:flex;
     justify-content: space-between;
-
+    background-color: #1752c8;
+    height: 100px;
+    
 
 }
+
+NavLink .active {
+color: red;
+
+}
+
+.nav {
+color: red;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 3rem;
+
+}
+
