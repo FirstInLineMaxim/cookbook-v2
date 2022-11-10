@@ -1,0 +1,25 @@
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 0.25rem;
+}
+.nav-container{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.nav-container a{
+    text-decoration: none;
+}
+.contacts-container{
+    display:flex;
+    flex-direction: column;
+}
+.socials{
+    display: flex;
+    justify-content: center;
+    gap:0.5rem;
+}
+.socials img{
+    height:30px;
+}
