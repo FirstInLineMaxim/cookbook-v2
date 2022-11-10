@@ -17,6 +17,13 @@ function Head () {
         .then((res) => setfoodlist(res))
         }
         ,[])
+
+        const soul = () => {
+            return (
+            <div> {foodlist.map((food) => (<p>{food.title}</p>))}
+            </div>)
+
+        }
    
         
     return (
@@ -32,7 +39,7 @@ function Head () {
           </select>
     )}
      </div>
-    <div id="div2"><p onMouseEnter={e => console.log(foodlist)}>M.F.M.</p><p>Food for the Soul</p><p>Food for the Body</p></div>
+    <div id="div2"><p onClick={soul}>M.F.M.</p><p>Food for the Soul</p><p>Food for the Body</p></div>
     </div>
     );
 }
