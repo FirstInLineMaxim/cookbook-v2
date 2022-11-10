@@ -20,6 +20,7 @@ function Head () {
    
         
     return (
+        <div id="back">
         <div className="Header">
     <NavLink to="main" className="nav" >Main</NavLink>
     <NavLink to="/" className="nav" >App</NavLink>
@@ -27,9 +28,11 @@ function Head () {
         {!foodlist ? (<p>Loading</p>) : (
     <select onChange={e => navigate(`main/${e.target.value}`)}>
          <option value="0">Select Food:</option>
-     {foodlist.map((food)=> (<option key="{value}" value={food.mainImage.title} >{food.title}</option>))}
+     {foodlist.map((food)=> (<option key={food.title} value={food.mainImage.title} >{food.title}</option>))}
           </select>
     )}
+     </div>
+    <div id="div2"><p>M.F.M.GMBH & CORP.AG</p></div>
     </div>
     );
 }

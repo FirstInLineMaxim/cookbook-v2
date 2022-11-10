@@ -1,10 +1,32 @@
 .Header {
     display:flex;
     justify-content: space-between;
-    background-color: #1a1b1d;
     height: 100px;
     align-items: center;
     
+
+}
+
+#back {
+    background-color: #282727;
+   
+}
+
+#div2 {
+    display: flex;
+    justify-content: center;
+    margin:0;
+    padding: 0;
+    height:100px;
+    
+
+}
+
+#div2 p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(14, 185, 253);
+    font-size: 3rem;
+
 
 }
 
