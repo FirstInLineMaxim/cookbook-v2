@@ -12,9 +12,9 @@ export default function TheDevs() {
         <div className='TheTech'>
             <h3>The Tech for this Project</h3>
             <h4>REACT</h4>
-            <p></p>
+            <p>General Structure for Creating the App</p>
             <h4>REACT ROUTER DOM</h4>
-            <p></p>
+            <p>Creating the individual Routes from </p>
             <h4>CONTENTFUL API</h4>
             <p></p>
             <h4>REACT UI CARDS</h4>
