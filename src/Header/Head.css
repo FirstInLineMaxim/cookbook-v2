@@ -14,21 +14,32 @@
 
 #div2 {
     display: flex;
-    justify-content: center;
-    margin:0;
-    padding: 0;
-    height:100px;
+        flex-direction: row;
+       height:100px;
+       justify-content: space-between;
     
 
 }
 
 #div2 p {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
     color: rgb(14, 185, 253);
     font-size: 3rem;
+   
+
+}
+
+#div2 h5 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(14, 185, 253);
+    font-size: 2.5rem;
+    align-self: center;
+
 
 
 }
+
 
 NavLink .active {
 color: red;
@@ -36,7 +47,7 @@ color: red;
 }
 
 .nav {
-color: red;
+color: rgba(246, 247, 249, 0.547);
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 font-size: 3rem;
 

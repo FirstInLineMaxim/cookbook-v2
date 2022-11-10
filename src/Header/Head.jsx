@@ -32,7 +32,7 @@ function Head () {
           </select>
     )}
      </div>
-    <div id="div2"><p>M.F.M.GMBH & CORP.AG</p></div>
+    <div id="div2"><p onMouseEnter={e => console.log(foodlist)}>M.F.M.</p><p>Food for the Soul</p><p>Food for the Body</p></div>
     </div>
     );
 }
