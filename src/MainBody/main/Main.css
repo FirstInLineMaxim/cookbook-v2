@@ -1,0 +1,32 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+.container {
+width: 100%;
+}
+
+.slider {
+ display: flex;
+ width: 100%;
+ flex-wrap: wrap;
+}
+
+.slider > div {
+flex: 0 0 33.33%;
+width: 33.33%;
+/* just to make it have netflix feel */
+/* aspect-ratio: 16/9; */
+/* padding: 0.25rem; */
+}
+
+.slider img {
+  max-width: 100%;
+  max-height: auto;
+  aspect-ratio: 16/9;
+  padding: 2.0rem;
+}
+
+.img-display {
+  border: 1px solid red;
+}
