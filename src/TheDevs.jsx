@@ -16,7 +16,7 @@ export default function TheDevs() {
             <h4>REACT ROUTER DOM</h4>
             <p>Creating the individual Routes from </p>
             <h4>CONTENTFUL API</h4>
-            <p></p>
+            <p>Recieve the Recepies</p>
             <h4>REACT UI CARDS</h4>
             <p>The Cards for the styling of the Dev cards</p>
             
