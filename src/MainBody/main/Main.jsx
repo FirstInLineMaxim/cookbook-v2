@@ -32,11 +32,14 @@ const Main = () => {
                 key={food.mainImage.file.details.size}
                 className="img-display"
               >
+                <Link to={food.mainImage.title}>
                 <img
                   src={`${food.mainImage.file.url}`}
                   alt={food.mainImage.file.url}
                   className="img"
                 />
+                  </Link>
+
                 <div>
                   <Link to={food.mainImage.title} className="link">
                     {food.title}
