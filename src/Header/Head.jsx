@@ -26,7 +26,7 @@ function Head () {
         {!foodlist ? (<p>Loading</p>) : (
     <select onClick={e => console.log(e.target.value)}>
          <option value="0">Select Food:</option>
-     {foodlist.map((food)=> (<option key="{value}" value={food.mainImage.title} >{food.title}</option>))}
+     {foodlist.map((food)=> (<option key={food.mainImage.title} value={food.mainImage.title} >{food.title}</option>))}
         
         </select>
     )}
