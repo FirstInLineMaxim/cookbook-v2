@@ -28,6 +28,7 @@ width: 25%;
   aspect-ratio: 1/1;
   /* padding: 2.0rem; */
   border-radius: 8px;
+  object-fit: cover;
 }
 
 .img-display {
