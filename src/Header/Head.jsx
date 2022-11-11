@@ -21,8 +21,9 @@ function Head () {
         
     return (
         <div className="Header">
-    <NavLink to="main" className="nav" >Main</NavLink>
-    <NavLink to="/" className="nav" >App</NavLink>
+    <NavLink to="main" className="nav" >TheDevs</NavLink>
+
+    <NavLink to="/" className="nav" >TheCookBook</NavLink>
         {!foodlist ? (<p>Loading</p>) : (
     <select onClick={e => console.log(e.target.value)}>
          <option value="0">Select Food:</option>

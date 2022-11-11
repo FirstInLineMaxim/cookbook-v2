@@ -2,20 +2,19 @@
     display:flex;
     justify-content: space-between;
     background-color: #1752c8;
-    height: 100px;
+    height: 3rem;
     
 
 }
 
-NavLink .active {
-color: red;
-
-}
 
 .nav {
-color: red;
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-font-size: 3rem;
-
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 200%;
+    
 }
 
+.active {
+color: red;
+}
