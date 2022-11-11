@@ -6,7 +6,7 @@ import App from './App';
 import FoodItems from "./MainBody/item/FoodItems";
 import Main from "./MainBody/main/Main";
 import Head from './Header/Head';
-
+import Footer from "./components/Footer";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -19,6 +19,7 @@ root.render(
         <Route path="main" element={<App/>} />
         <Route path="/:food" element={<FoodItems />} />
       </Routes>
+      <Footer/>
     </BrowserRouter>
   </React.StrictMode>
 );

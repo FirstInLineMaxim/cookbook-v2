@@ -1,14 +1,14 @@
 import { useNavigate } from "react-router-dom";
 
 import "./App.css";
-import Footer from "./components/Footer";
+
 import TheDevs from "./TheDevs";
 
 function App() {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate("/main");
+    navigate("/");
   };
 
   return (
@@ -16,7 +16,6 @@ function App() {
       <h1 onClick={handleClick}>Go To Main</h1>
 
       <TheDevs />
-      <Footer />
     </div>
   );
 }
