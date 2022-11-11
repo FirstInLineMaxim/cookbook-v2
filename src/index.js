@@ -5,8 +5,11 @@ import './index.css';
 import App from './App';
 import FoodItems from "./MainBody/item/FoodItems";
 import Main from "./MainBody/main/Main";
+<<<<<<< HEAD
+=======
 import reportWebVitals from './reportWebVitals';
 import Head from './Header/Head';
+>>>>>>> bd87b0c4462e19687aec4c1bcb4702166d0debf1
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -24,7 +27,3 @@ root.render(
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
