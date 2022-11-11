@@ -5,11 +5,7 @@ import './index.css';
 import App from './App';
 import FoodItems from "./MainBody/item/FoodItems";
 import Main from "./MainBody/main/Main";
-<<<<<<< HEAD
-=======
-import reportWebVitals from './reportWebVitals';
 import Head from './Header/Head';
->>>>>>> bd87b0c4462e19687aec4c1bcb4702166d0debf1
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
