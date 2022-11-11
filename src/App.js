@@ -1,25 +1,24 @@
-import logo from './logo.svg';
+import { useNavigate } from 'react-router-dom';
 import './App.css';
+// import Slider from './Slider/Slider';
+// import { SliderImages } from './Slider/SliderImage';
 
 function App() {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/main");
+    
+    
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <h3>Hello World!</h3>
-        
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <h1 onClick={handleClick}>Go To Main</h1> 
+      {/* <br />
+      <br />
+      <br />
+      {/* <Slider slides={SliderImages}/> */}
     </div>
   );
 }

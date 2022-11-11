@@ -28,14 +28,14 @@ const FoodItems = () => {
   return (
     foodItems && (
       <>
-        <header className="bg-light text-center">
+        <header className="bg- lighttext-center" style={{background: "#EDE4E0"}}>
           <div className="container--narrow">
             <h1>{foodItems.title}</h1>
             <p>{foodItems.description}</p>
           </div>
         </header>
 
-        <section className="bg-accent">
+        <section className="bg-accent" style={{background: "#EDE4E0"}}>
           <div className="container">
             <div className="container-divs image">
               <img

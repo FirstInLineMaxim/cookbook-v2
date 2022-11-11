@@ -23,19 +23,27 @@ const Main = () => {
   }, [getFoods]);
 
   return (
-    <div className="container">
+    <div className="container" style={{background: "#FAF7F0"}}>
       <div className="slider">
         {foods &&
           foods.map((food) => (
-            <div key={food.mainImage.file.details.size} className="img-display">
-              <img
-                src={`${food.mainImage.file.url}`}
-                alt={food.mainImage.file.url}
-              className="img"/>
-              <div>
-                <Link to={food.mainImage.title} className="link">{food.title}</Link>
+            
+              <div
+                key={food.mainImage.file.details.size}
+                className="img-display"
+              >
+                <img
+                  src={`${food.mainImage.file.url}`}
+                  alt={food.mainImage.file.url}
+                  className="img"
+                />
+                <div>
+                  <Link to={food.mainImage.title} className="link">
+                    {food.title}
+                  </Link>
+                </div>
               </div>
-            </div>
+            
           ))}
       </div>
     </div>
