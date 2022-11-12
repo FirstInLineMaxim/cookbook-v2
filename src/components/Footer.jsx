@@ -12,12 +12,12 @@ export default function Footer() {
     <>
     <div className='footer-container'>
         <nav className='nav-container'>
-            <a href='#' >About</a>
-            <a href='#' >Contact</a>
-            <a href='#' >TheDev's</a>
-            <a href='#' >History</a>
-            <a href='#' >AGB</a>
-            <a href='#' >Policy</a>
+          <Link to="thedevs">About</Link>
+          <Link to="thedevs">Contact</Link>
+          <Link to="thedevs">TheDevs's</Link>
+          <Link to="thedevs">History</Link>
+          <Link to="thedevs">AGB</Link>
+          <Link to="thedevs">Policy</Link>
         </nav>
         <div className='contacts-container'>
           <div className="newsletter">

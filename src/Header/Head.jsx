@@ -21,7 +21,7 @@ function Head () {
         
     return (
         <div className="Header">
-    <NavLink to="main" className="nav" >TheDevs</NavLink>
+    <NavLink to="thedevs" className="nav" >TheDevs</NavLink>
 
     <NavLink to="/" className="nav" >TheCookBook</NavLink>
         {!foodlist ? (<p>Loading</p>) : (
