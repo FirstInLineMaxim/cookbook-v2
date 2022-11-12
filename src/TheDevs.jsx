@@ -7,6 +7,7 @@ import './devs.css'
 
 export default function TheDevs() {
   return (
+    <>
     <div className='theMain'>
         <h2>TheDevs & The Tech</h2>
         <div className='TheTech'>
@@ -37,6 +38,7 @@ export default function TheDevs() {
                         }
                     ]}
                     positionName='FullStack Dev'
+                    className='Card'
                 />
                                 <UserCard
                     float
@@ -51,6 +53,8 @@ export default function TheDevs() {
                         }
                     ]}
                     positionName='FullStack Dev'
+                    className='Card'
+
                 />
 
                     <UserCard
@@ -66,8 +70,11 @@ export default function TheDevs() {
                             }
                         ]}
                         positionName='FullStack Dev'
+                    className='Card'
+
                     />
         </div>
     </div>
+    </>
   )
 }
