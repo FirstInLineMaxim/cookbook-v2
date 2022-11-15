@@ -1,11 +1,45 @@
 .Header {
     display:flex;
     justify-content: space-between;
-    background-color: #1752c8;
     height: 100px;
+    align-items: center;
     
 
 }
+
+#back {
+    background-color: #282727;
+   
+}
+
+#div2 {
+    display: flex;
+        flex-direction: row;
+       height:100px;
+       justify-content: space-between;
+    
+
+}
+
+#div2 p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    color: rgb(14, 185, 253);
+    font-size: 3rem;
+   
+
+}
+
+#div2 h5 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(14, 185, 253);
+    font-size: 2.5rem;
+    align-self: center;
+
+
+
+}
+
 
 NavLink .active {
 color: red;
@@ -13,9 +47,13 @@ color: red;
 }
 
 .nav {
-color: red;
+color: rgba(246, 247, 249, 0.547);
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 font-size: 3rem;
 
 }
 
+select {
+
+    background-color: rgb(144, 144, 166);
+}
