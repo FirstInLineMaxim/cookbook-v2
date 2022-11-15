@@ -39,7 +39,7 @@ function Head () {
           </select>
     )}
      </div>
-    <div id="div2"><p onClick={soul}>M.F.M.</p><p>Food for the Soul</p><p>Food for the Body</p></div>
+        <div id="div2"><p onClick={ e =>  console.log(foodlist)}>M.F.M.</p><p>Food for the Soul</p><p>Food for the Body</p></div>
     </div>
     );
 }
