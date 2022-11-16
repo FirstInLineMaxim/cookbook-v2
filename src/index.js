@@ -6,6 +6,7 @@ import App from './App';
 import FoodItems from "./MainBody/item/FoodItems";
 import Main from "./MainBody/main/Main";
 import Head from './Header/Head';
+import Footer from './components/Footer';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -18,6 +19,7 @@ root.render(
         <Route path="thedevs" element={<App />} />
         <Route path="cookbook-v2/:food" element={<FoodItems />} />
       </Routes>
+      <Footer/>
     </BrowserRouter>
   </React.StrictMode>
 );

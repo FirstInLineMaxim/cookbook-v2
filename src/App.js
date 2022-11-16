@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 
 import "./App.css";
 import Footer from "./components/Footer";
-import TheDevs from "./TheDevs";
+import TheDevs from "./TheDevs/TheDevs";
 
 function App() {
   const navigate = useNavigate();
