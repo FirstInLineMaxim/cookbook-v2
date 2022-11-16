@@ -1,6 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { BrowserRouter,NavLink,useNavigate,generatePath,Link, Routes, Route } from "react-router-dom";
+import {NavLink,useNavigate} from "react-router-dom";
 import './Head.css'
 import getContentful from "../getContentful";
 import {useState, useEffect} from "react";
