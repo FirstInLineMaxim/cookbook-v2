@@ -27,8 +27,8 @@ function Head () {
         
     return (
         <div id="back">
-        <div className="Header">
-    <NavLink to="main" className="nav" >Main</NavLink>
+        <div className="Header">v
+    <NavLink to="thedevs" className="nav" >TheDevs's</NavLink>
     <NavLink to="/" className="nav" >Contact</NavLink>
     <a href="https://www.tasteatlas.com/100-most-popular-foods-in-the-world" className="nav">International Food delicacies</a> 
         {!foodlist ? (<p>Loading</p>) : (
