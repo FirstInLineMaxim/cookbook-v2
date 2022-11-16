@@ -16,13 +16,13 @@ color: #f74abb;
 .select_head{
     background-color: transparent;
     border-color: transparent;
-    width:18rem;
     color: rgba(246, 247, 249, 0.547);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 3rem;
+    font-size: 1.5rem;
 }
 
 .option_head{
+    width: min-content;
     color: rgba(246, 247, 249, 0.547);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 1rem;
