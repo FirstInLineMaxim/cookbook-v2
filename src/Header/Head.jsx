@@ -1,10 +1,10 @@
 import React from 'react';
-import {NavLink,useNavigate} from "react-router-dom";
+import {NavLink,Link,useNavigate} from "react-router-dom";
 import './Head.css'
 import getContentful from "../getContentful";
 import {useState, useEffect} from "react";
 import logo from './logo/logo1.webp'
-import search from './logo/search.svg'
+import Search from '../components/Search';
 import './logo/logo.css'
 
 
@@ -32,7 +32,8 @@ function Head () {
         <div id="back">
         <div className="Header">
             <div className='left_head'>
-            <img className="logo_head"src={logo} alt=''/>
+                <Link to="/cookbook-v2"><img className="logo_head"src={logo} alt=''/></Link>
+            
             <nav className='nav_head'>
             {!foodlist ? (<p>Loading</p>) : (
     <select className='select_head' onChange={e => navigate(`main/${e.target.value}`)}>
@@ -48,12 +49,7 @@ function Head () {
     </nav>
     </div>
     <div className='right_head'>
-    <div class="search-box">
-  <input type="text" class="search-input" placeholder="Start Looking For Something!"/>
-  <a class="search-btn" href="#">
-    <i class="fas fa-search"><img className='search_icon_head' src={search} alt="search" /></i>
-  </a>
-</div>
+    <Search/>
     </div>
      </div>
     </div>
