@@ -3,6 +3,8 @@ import {NavLink,useNavigate} from "react-router-dom";
 import './Head.css'
 import getContentful from "../getContentful";
 import {useState, useEffect} from "react";
+import logo from './logo/logo1.webp'
+import './logo/logo.css'
 
 
 
@@ -27,18 +29,20 @@ function Head () {
         
     return (
         <div id="back">
-        <div className="Header">v
+        <div className="Header">
+            <img className="logo_head"src={logo} alt=''/>
+            <nav className='nav_head'>
     <NavLink to="thedevs" className="nav" >TheDevs's</NavLink>
     <NavLink to="/" className="nav" >Contact</NavLink>
     <a href="https://www.tasteatlas.com/100-most-popular-foods-in-the-world" className="nav">International Food delicacies</a> 
         {!foodlist ? (<p>Loading</p>) : (
-    <select onChange={e => navigate(`main/${e.target.value}`)}>
-         <option value="0">Select Food:</option>
-     {foodlist.map((food)=> (<option key={food.title} value={food.mainImage.title} >{food.title}</option>))}
+    <select className='select_head' onChange={e => navigate(`main/${e.target.value}`)}>
+         <option className="option_head" value="0">The Recepies</option>
+     {foodlist.map((food)=> (<option className="option_head" key={food.title} value={food.mainImage.title} >{food.title}</option>))}
           </select>
     )}
+    </nav>
      </div>
-        <div id="div2"><p onClick={ e =>  console.log(foodlist)}>M.F.M.</p><p>Food for the Soul</p><p>Food for the Body</p></div>
     </div>
     );
 }
