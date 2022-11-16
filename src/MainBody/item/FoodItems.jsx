@@ -1,5 +1,6 @@
 // import "./FoodItems.css";
 import "./FoodItems2.css";
+import Recommend from "../../components/logo/recommend/Recommend";
 
 import getContentful from "../../getContentful";
 import { useState, useEffect } from "react";
@@ -27,11 +28,14 @@ const FoodItems = () => {
       .catch((err) => console.log(err));
   }, [getFoods, params.food]);
 
+
   return (
     foodItems && (
       <>
       <div className="grid_main">
-      <div className="grid_main_left"></div>
+      <div className="grid_main_left">
+        <Recommend foodItems={params}/>
+      </div>
       <div className="grid_main_center">
         
       <header className="bg-lighttext-center" style={{background: "#EDE4E0"}}>

@@ -1,0 +1,34 @@
+.main_Card_Item{
+    display: flex;
+padding: 1rem;
+width: 80%;
+background-color: white;
+border: 1px red solid;
+}
+
+.Card_Item_Image{
+display: flex;
+align-items: center;
+padding-right: 1rem;
+}
+.Card_Item_Image img{
+    /* width: 64px; */
+    width: 128px;
+    height: 128px;
+    object-fit: cover;
+
+}
+
+.Card_Item_Desc h4{
+    text-align: left;
+    font-size: 26px;
+
+}
+.Card_Item_Desc{
+    max-height: 128px;
+    overflow: hidden;
+}
+
+.Link{
+    text-decoration: none;
+}
