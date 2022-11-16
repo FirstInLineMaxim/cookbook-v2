@@ -1,7 +1,8 @@
 .Header {
     display:flex;
     justify-content: space-between;
-    height: 100px;
+    gap:1rem;
+    height: 3rem;
     align-items: center;
    
 }
@@ -44,7 +45,7 @@ color: red;
 .nav {
 color: rgba(246, 247, 249, 0.547);
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-font-size: 3rem;
+font-size: 1rem;
 
 }
 

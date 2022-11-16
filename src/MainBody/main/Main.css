@@ -45,10 +45,12 @@ width: 25%;
   bottom: 0;
   background: rgb(0, 0, 0);
   background: rgba(151, 132, 132, 0.5);
-  color: #201c1c;
+  color: #ffffff;
   width: 100%;
   padding: 20px;
   text-align: center;
   text-decoration: none;
   border-radius: 8px;
+  font-weight: 500;
+  font-size: 2rem;
 }

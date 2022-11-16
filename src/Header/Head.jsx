@@ -1,9 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { BrowserRouter,NavLink,useNavigate,generatePath,Link, Routes, Route } from "react-router-dom";
+import {NavLink,Link,useNavigate} from "react-router-dom";
 import './Head.css'
 import getContentful from "../getContentful";
 import {useState, useEffect} from "react";
+import logo from './logo/logo1.webp'
+import Search from '../components/Search';
+import './logo/logo.css'
 
 
 
@@ -16,7 +18,7 @@ function Head () {
     {getFoods()
         .then((res) => setfoodlist(res))
         }
-        ,[])
+        ,[getFoods])
 
         const soul = () => {
             return (
@@ -29,17 +31,27 @@ function Head () {
     return (
         <div id="back">
         <div className="Header">
-    <NavLink to="main" className="nav" >Main</NavLink>
-    <NavLink to="/" className="nav" >Contact</NavLink>
-    <a href="https://www.tasteatlas.com/100-most-popular-foods-in-the-world" className="nav">International Food delicacies</a> 
-        {!foodlist ? (<p>Loading</p>) : (
-    <select onChange={e => navigate(`main/${e.target.value}`)}>
-         <option value="0">Select Food:</option>
-     {foodlist.map((food)=> (<option key={food.title} value={food.mainImage.title} >{food.title}</option>))}
+            <div className='left_head'>
+                <Link to="/cookbook-v2"><img className="logo_head"src={logo} alt=''/></Link>
+            
+            <nav className='nav_head'>
+            {!foodlist ? (<p>Loading</p>) : (
+    <select className='select_head' onChange={e => navigate(`main/${e.target.value}`)}>
+         <option className="option_head" value="0">The Recepies</option>
+     {foodlist.map((food)=> (<option className="option_head" key={food.title} value={food.mainImage.title} >{food.title}</option>))}
           </select>
     )}
+  
+    <NavLink to="thedevs" className="nav" >TheDevs's</NavLink>
+    <NavLink to="/" className="nav" >Contact</NavLink>
+    <a href="https://www.tasteatlas.com/100-most-popular-foods-in-the-world" className="nav">International Food delicacies</a> 
+
+    </nav>
+    </div>
+    <div className='right_head'>
+    <Search/>
+    </div>
      </div>
-        <div id="div2"><p onClick={ e =>  console.log(foodlist)}>M.F.M.</p><p>Food for the Soul</p><p>Food for the Body</p></div>
     </div>
     );
 }
