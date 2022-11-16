@@ -1,9 +1,10 @@
 .logo_head{
     height: 3em;
+    padding: 0 6rem 0 4rem;
 }
 .nav_head{
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     align-items: baseline;
 }
 .nav_head *:hover{
