@@ -15,7 +15,7 @@ function Head () {
     {getFoods()
         .then((res) => setfoodlist(res))
         }
-        ,[])
+        ,[getFoods])
 
         const soul = () => {
             return (
