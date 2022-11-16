@@ -50,3 +50,12 @@
   }
 
   /* END */
+
+  .searchResult{
+    position:absolute;
+    top: 8%;
+    left: 50%;
+    z-index: 1;
+    background-color: #cd595a;
+    font-size: 2rem;
+  }
