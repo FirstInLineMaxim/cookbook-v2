@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react'
+import React from 'react'
 import { UserCard } from 'react-ui-cards';
 import frank from './img/Avatars/frank.webp'
 import michell from './img/Avatars/Michell.webp'
