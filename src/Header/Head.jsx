@@ -36,7 +36,7 @@ function Head () {
             
             <nav className='nav_head'>
             {!foodlist ? (<p>Loading</p>) : (
-    <select className='select_head' onChange={e => navigate(`main/${e.target.value}`)}>
+    <select className='select_head' onChange={e => navigate(`cookbook-v2/${e.target.value}`)}>
          <option className="option_head" value="0">The Recepies</option>
      {foodlist.map((food)=> (<option className="option_head" key={food.title} value={food.mainImage.title} >{food.title}</option>))}
           </select>
