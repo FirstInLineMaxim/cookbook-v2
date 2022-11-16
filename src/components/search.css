@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,600&display=swap');
 
-  /* div */
+/* div */
   /* input */
   .search-input {
     outline: none;
@@ -12,6 +13,8 @@
     font-size: 16px;
     transition: .3s;
     line-height: 40px;
+    font-family: 'Bodoni Moda', serif;
+    ;
   }
   .search-input::placeholder {
     color: #dbc5b0;

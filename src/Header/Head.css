@@ -21,7 +21,7 @@
 }
 
 #div2 p {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Bodoni Moda', serif;
     display: flex;
     color: rgb(14, 185, 253);
     font-size: 3rem;
@@ -29,7 +29,7 @@
 }
 
 #div2 h5 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Bodoni Moda', serif;
     color: rgb(14, 185, 253);
     font-size: 2.5rem;
     align-self: center;
@@ -44,7 +44,7 @@ color: red;
 
 .nav {
 color: rgba(246, 247, 249, 0.547);
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-family: 'Bodoni Moda', serif;
 font-size: 1rem;
 
 }
