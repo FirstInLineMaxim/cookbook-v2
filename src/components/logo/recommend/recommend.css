@@ -3,7 +3,7 @@
 padding: 1rem;
 width: 80%;
 background-color: white;
-border: 1px red solid;
+border-radius: 12px;
 }
 
 .Card_Item_Image{
@@ -31,4 +31,10 @@ padding-right: 1rem;
 
 .Link{
     text-decoration: none;
+}
+
+.Card_Container21{
+    padding: 1rem;
+    display: grid;
+    gap: 1rem;
 }

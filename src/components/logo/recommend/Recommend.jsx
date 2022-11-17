@@ -31,6 +31,7 @@ export default function Recommend({foodItems}) {
 
   return (
     <>  
+    <div className='Card_Container21'>
     {food && food.map((ele) => 
         <>
          <Link className='Link' to={`/cookbook-v2/${ele.mainImage.title}`}>
@@ -47,6 +48,7 @@ export default function Recommend({foodItems}) {
                   </Link>
     </>
     )}
+    </div>
 </>
   )
 }
