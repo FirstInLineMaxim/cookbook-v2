@@ -10,19 +10,19 @@ export default function TheDevs() {
     <div className='theMain'>
         <h2>TheDevs & The Tech</h2>
         <div className='TheTech'>
-            <h3>The Tech for this Project</h3>
-            <h4>REACT</h4>
+            {/* <h3 className="h3">The Tech for this Project</h3> */}
+            <h4 className="h4">REACT</h4>
             <p>General Structure for Creating the App</p>
-            <h4>REACT ROUTER DOM</h4>
+            <h4 className="h4">REACT ROUTER DOM</h4>
             <p>Creating the individual Routes from </p>
-            <h4>CONTENTFUL API</h4>
+            <h4 className="h4">CONTENTFUL API</h4>
             <p>Recieve the Recepies</p>
-            <h4>REACT UI CARDS</h4>
+            <h4 className="h4">REACT UI CARDS</h4>
             <p>The Cards for the styling of the Dev cards</p>
             
 
         </div>
-            <h3>The Developer of this Project</h3>
+            <h3 className="h3">The Developer of this Project</h3>
         <div className='theDevs'>
             <UserCard
                     float
