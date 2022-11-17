@@ -1,6 +1,5 @@
 import React from 'react'
 import './Footer.css'
-import { Link } from 'react-router-dom'
 import discord from './image/discord.svg'
 import facebook from './image/facebook.svg'
 import linkedIn from './image/linkedin.svg'
