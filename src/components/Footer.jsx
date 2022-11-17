@@ -1,6 +1,11 @@
 import React from 'react'
 import './Footer.css'
 import { Link } from 'react-router-dom'
+import discord from './image/discord.svg'
+import facebook from './image/facebook.svg'
+import linkedIn from './image/linkedin.svg'
+import github from './image/github.svg'
+
 
 export default function Footer() {
   return (
@@ -16,10 +21,10 @@ export default function Footer() {
         </nav>
         <div className='contacts-container'>
             <div className='socials'>
-                <img src="https://img.icons8.com/external-kiranshastry-gradient-kiranshastry/344/external-placeholder-agriculture-and-farmer-kiranshastry-gradient-kiranshastry.png" alt="Instagram" />
-                <img src="https://img.icons8.com/external-kiranshastry-gradient-kiranshastry/344/external-placeholder-agriculture-and-farmer-kiranshastry-gradient-kiranshastry.png" alt="Github" />
-                <img src="https://img.icons8.com/external-kiranshastry-gradient-kiranshastry/344/external-placeholder-agriculture-and-farmer-kiranshastry-gradient-kiranshastry.png" alt="Facebook" />
-                <img src="https://img.icons8.com/external-kiranshastry-gradient-kiranshastry/344/external-placeholder-agriculture-and-farmer-kiranshastry-gradient-kiranshastry.png" alt="LinkedIn" />
+                <img src={discord} alt="Instagram" />
+                <img src={facebook} alt="Github" />
+                <img src={linkedIn} alt="Facebook" />
+                <img src={github} alt="LinkedIn" />
             </div>
             <input type={'text'} placeholder={"E-mail"}/>
         </div>
