@@ -49,7 +49,7 @@ function Head () {
     </nav>
     </div>
     <div className='right_head'>
-    <Search/>
+    <Search food={foodlist}/>
     </div>
      </div>
     </div>
