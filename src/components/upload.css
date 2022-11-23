@@ -1,0 +1,14 @@
+.form_container{
+    text-align: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form *{
+    width: 300px;
+}
+.category{
+    display: flex;
+}

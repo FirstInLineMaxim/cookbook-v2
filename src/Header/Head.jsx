@@ -43,7 +43,7 @@ function Head () {
     )}
   
     <NavLink to="thedevs" className="nav" >TheDevs's</NavLink>
-    <NavLink to="/" className="nav" >Contact</NavLink>
+    <NavLink to="cookbook-v2/upload" className="nav" >Upload</NavLink>
     <a href="https://www.tasteatlas.com/100-most-popular-foods-in-the-world" className="nav">International Food delicacies</a> 
 
     </nav>
