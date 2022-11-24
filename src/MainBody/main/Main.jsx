@@ -13,19 +13,19 @@ const Main = () => {
 
   const { getFoods } = getContentful();
 
-  useEffect(() => {
-    // set the foods here since it 's already an array
-    getFoods()
-      .then((res) => {
-        // console.log(res);
-        setFoods(res);
-      })
-      .catch((err) => console.log(err));
-  }, [getFoods]);
-
   // useEffect(() => {
-  // fetch('http://localhost:3000/recepies').then(data => data.json()).then(data => setFoods(data)).then(console.log(foods))
-  // }, [])
+  //   // set the foods here since it 's already an array
+  //   getFoods()
+  //     .then((res) => {
+  //       // console.log(res);
+  //       setFoods(res);
+  //     })
+  //     .catch((err) => console.log(err));
+  // }, [getFoods]);
+
+  useEffect(() => {
+  fetch('http://localhost:3000/recepies').then(data => data.json()).then(data => setFoods(data)).then(console.log(foods))
+  }, [])
   
 // const getFetch = async ()=>{
 //   await fetch('http://localhost:3000/recepies').then(data => setRecepies(data.json()))
@@ -38,19 +38,19 @@ const Main = () => {
           foods.map((food) => (
             
               <div
-                key={food.mainImage.file.details.size}
+                key={food.id}
                 className="img-display"
               >
-                <Link to={food.mainImage.title}>
+                <Link to={food.title}>
                 <img
-                  src={`${food.mainImage.file.url}`}
-                  alt={food.mainImage.file.url}
+                  src={`${food.img_url}`}
+                  alt={food.img_url}
                   className="img"
                 />
                   </Link>
 
                 <div>
-                  <Link to={food.mainImage.title} className="link">
+                  <Link to={food.title} className="link">
                     {food.title}
                   </Link>
                 </div>
