@@ -56,7 +56,8 @@ const Main = () => {
                 </div>
               </div>
             
-          ))}
+          ))
+          .reverse()}
       </div>
     </div>
   );
