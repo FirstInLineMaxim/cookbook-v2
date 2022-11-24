@@ -1,15 +1,15 @@
-import { upload } from '@testing-library/user-event/dist/upload'
+// import { upload } from '@testing-library/user-event/dist/upload'
 import React,{useState} from 'react'
 import './upload.css'
 
 export default function Upload () {
-  const [uploadData, setUploadData] = useState({
-    title:"",
-    description:"",
-    ingredients:[],
-    instructions:""
-  })
-  
+  // const [uploadData, setUploadData] = useState({
+  //   title:"",
+  //   description:"",
+  //   ingredients:[],
+  //   instructions:""
+  // })
+
   return (
     <>
     <div className='form_container'>

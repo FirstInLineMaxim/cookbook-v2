@@ -15,7 +15,8 @@ function Head () {
    const navigate = useNavigate();
 
     useEffect(()=> 
-    {getFoods()
+    {fetch('http://localhost:3000/recepies')
+    .then(data => data.json())
         .then((res) => setfoodlist(res))
         }
         ,[getFoods])
@@ -38,7 +39,7 @@ function Head () {
             {!foodlist ? (<p>Loading</p>) : (
     <select className='select_head' onChange={e => navigate(`cookbook-v2/${e.target.value}`)}>
          <option className="option_head" value="0">The Recepies</option>
-     {foodlist.map((food)=> (<option className="option_head" key={food.title} value={food.mainImage.title} >{food.title}</option>))}
+     {foodlist.map((food)=> (<option className="option_head" key={food.title} value={food.title} >{food.title}</option>))}
           </select>
     )}
   

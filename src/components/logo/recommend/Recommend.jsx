@@ -1,14 +1,14 @@
 import React, {useEffect,useState} from 'react'
 import './recommend.css'
-import getContentful from "../../../getContentful";
+// import getContentful from "../../../getContentful";
 import { Link } from "react-router-dom";
 
-export default function Recommend({foodItems}) {
-    const { getFoods } = getContentful();
+export default function Recommend() {
     const [food,SetFood] = useState(null)
     useEffect(() => {
         // set the foods here since it 's already an array
-        getFoods()
+        fetch('http://localhost:3000/recepies')
+        .then(data => data.json())
           .then((res) => { SetFood(res);
           })
           .catch((err) => console.log(err));
@@ -34,10 +34,10 @@ export default function Recommend({foodItems}) {
     <div className='Card_Container21'>
     {food && food.map((ele) => 
         <>
-         <Link className='Link' to={`/cookbook-v2/${ele.mainImage.title}`}>
+         <Link className='Link' to={`/cookbook-v2/${ele.title}`}>
         <div className='main_Card_Item'>
         <div className='Card_Item_Image'>
-        <img src={ele.mainImage.file.url} alt={ele.title} />
+        <img src={ele.img_url} alt={ele.title} />
         </div>
         <div className='Card_Item_Desc'>
             <h4>{ele.title}</h4>

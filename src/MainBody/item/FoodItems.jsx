@@ -17,17 +17,22 @@ const FoodItems = () => {
 
   useEffect(() => {
     // set the foods here since it 's already an array
-    getFoods()
+    fetch('http://localhost:3000/recepies')
+    .then(data => data.json())
       .then((res) => {
+        console.log(res)
         const singleFood = res.find(
-          (item) => item.mainImage.title === params.food
+          (item) => item.title === params.food
         );
         // console.log(singleFood)
         setFoodItems(singleFood);
       })
       .catch((err) => console.log(err));
-  }, [getFoods, params.food]);
+  }, []);
 
+  // useEffect(() => {
+  //   fetch('http://localhost:3000/recepies').then(data => data.json()).then(data => console.log(data))
+  //   }, [])
 
   return (
     foodItems && (
@@ -49,8 +54,8 @@ const FoodItems = () => {
           <div className="container">
             <div className="container-divs image">
               <img
-                src={`${foodItems.mainImage.file.url}`}
-                alt={foodItems.mainImage.file.url}
+                src={`${foodItems.img_url}`}
+                alt={foodItems.img_url}
               />
             </div>
             <div className="container-divs instructions">
@@ -60,9 +65,10 @@ const FoodItems = () => {
             <div className="container-divs ingredients">
               <h4>Ingredients</h4>
               <ul>
-                {foodItems.ingredients.map((ingredient) => (
+                <li>{foodItems.ingredients}</li>
+                {/* {foodItems.ingredients.map((ingredient) => (
                   <li>{ingredient}</li>
-                ))}
+                ))} */}
               </ul>
             </div>
           </div>
