@@ -19,7 +19,7 @@ function Head () {
     .then(data => data.json())
         .then((res) => setfoodlist(res))
         }
-        ,[getFoods])
+        ,[])
 
         const soul = () => {
             return (
