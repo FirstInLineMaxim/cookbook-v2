@@ -23,9 +23,9 @@ const Main = () => {
       .catch((err) => console.log(err));
   }, [getFoods]);
 
-  useEffect(() => {
-  fetch('http://localhost:3000/recepies').then(data => data.json()).then(data => console.log(data))
-  }, [])
+  // useEffect(() => {
+  // fetch('http://localhost:3000/recepies').then(data => data.json()).then(data => setFoods(data)).then(console.log(foods))
+  // }, [])
   
 // const getFetch = async ()=>{
 //   await fetch('http://localhost:3000/recepies').then(data => setRecepies(data.json()))
