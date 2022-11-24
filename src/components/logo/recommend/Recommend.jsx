@@ -32,6 +32,7 @@ export default function Recommend() {
   return (
     <>  
     <div className='Card_Container21'>
+      <a href="/cookbook-v2/Kimchi">kimchi</a>
     {food && food.map((ele) => 
         <>
          <Link className='Link' to={`/cookbook-v2/${ele.title}`}>
