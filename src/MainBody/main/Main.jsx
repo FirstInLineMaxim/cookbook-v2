@@ -9,6 +9,7 @@ import React from "react";
 
 const Main = () => {
   const [foods, setFoods] = useState(null);
+  const [recepies, setRecepies] = useState()
 
   const { getFoods } = getContentful();
 
@@ -22,6 +23,14 @@ const Main = () => {
       .catch((err) => console.log(err));
   }, [getFoods]);
 
+  useEffect(() => {
+  fetch('http://localhost:3000/recepies').then(data => data.json()).then(data => console.log(data))
+  }, [])
+  
+// const getFetch = async ()=>{
+//   await fetch('http://localhost:3000/recepies').then(data => setRecepies(data.json()))
+// }
+// getFetch()
   return (
     <div className="container" style={{background: "#FAF7F0"}}>
       <div className="slider">
