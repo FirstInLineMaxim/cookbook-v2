@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,600&display=swap');
+
 :root {
 
   --color-primary-200: #f3eed9;
@@ -7,7 +8,7 @@
   --color-neutral-100: #fff;
   --color-neutral-900: #222c2a;
 
-  
+
   --ff-primary: 'Lato', sans-serif;
   --ff-accent: 'Merriweather', serif;
 }
@@ -37,17 +38,18 @@
 .container--narrow {
   max-width: 30rem;
   margin-inline: auto;
-  
+
 }
 
 .bg-accent .container {
   margin-inline: auto;
-  
+
   width: min(90%, 75em);
   /* width: 40.5em;
   min-width: 90%; */
 
- }
+}
+
 .container-divs {
   width: 65%;
   margin: auto;
@@ -55,10 +57,10 @@
 }
 
 
- 
+
 img {
   display: block;
-  
+
   max-width: 100%;
 }
 
@@ -66,14 +68,14 @@ h1, h2, h3 {
   font-family: var(--ff-accent);
   font-weight: 900;
   line-height: 1.2;
-  
+
 }
 
 h1, h2, h3, h4, p, li {
   margin-bottom: 1em;
   font-family: var(--ff-accent);
   color: var(--color-primary-400);
-  
+
 }
 
 .ingredients ul {
@@ -92,10 +94,9 @@ section, header {
 }
 
 @media only screen and (min-width: 75em) {
-  
+
 
   section, header {
     padding: 5rem 0;
   }
 }
-

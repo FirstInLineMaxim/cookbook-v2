@@ -24,37 +24,37 @@ const Main = () => {
   // }, [getFoods]);
 
   useEffect(() => {
-  fetch('https://cookbook-api-w7xc.onrender.com/recepies').then(data => data.json()).then(data => setFoods(data)).then(console.log(foods))
+    fetch('https://cookbook-api-w7xc.onrender.com/recepies').then(data => data.json()).then(data => setFoods(data)).catch(err => console.error(err))
   }, [])
-  
-  
+
+
   return (
-    <div className="container" style={{background: "#FAF7F0"}}>
+    <div className="container" style={{ background: "#FAF7F0" }}>
       <div className="slider">
         {foods &&
           foods.map((food) => (
-            
-              <div
-                key={food.id}
-                className="img-display"
-              >
-                <Link to={food.title}>
+
+            <div
+              key={food.id}
+              className="img-display"
+            >
+              <Link to={food.title}>
                 <img
                   src={`${food.img_url}`}
                   alt={food.img_url}
                   className="img"
                 />
-                  </Link>
+              </Link>
 
-                <div>
-                  <Link to={food.title} className="link">
-                    {food.title}
-                  </Link>
-                </div>
+              <div>
+                <Link to={food.title} className="link">
+                  {food.title}
+                </Link>
               </div>
-            
+            </div>
+
           ))
-          .reverse()}
+            .reverse()}
       </div>
     </div>
   );

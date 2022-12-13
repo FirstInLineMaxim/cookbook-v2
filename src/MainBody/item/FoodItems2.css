@@ -1,63 +1,70 @@
-
-.grid_main{
+.grid_main {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    background-color:  #EDE4E0;
+    background-color: #EDE4E0;
 }
-.bg-lighttext-center{
+
+.bg-lighttext-center {
     display: flex;
     justify-content: center;
 
 }
-.container{
+
+.container {
     display: flex;
     flex-direction: column;
     /* align-items: center; */
 }
-.container--narrow{
-padding: 1rem 0;
-}
 
-.container--narrow p{
+.container--narrow {
     padding: 1rem 0;
 }
-.image{
-align-self: center;
+
+.container--narrow p {
+    padding: 1rem 0;
 }
 
-.image img{
+.image {
+    align-self: center;
+}
+
+.image img {
     padding: 1rem 0;
     width: 100%;
     height: auto;
     max-width: 720px;
 }
-.instructions{
+
+.instructions {
     align-self: center;
     padding: 1.5rem 0;
 }
 
-.instructions p{
+.instructions p {
     text-align: center;
     padding: 1rem 8rem 0 8rem;
     line-height: 1.25rem;
 }
+
 .ingredients {
-    padding:1.5rem 0;
-text-align: center;
+    padding: 1.5rem 0;
+    text-align: center;
 }
-.ingredients h4{
+
+.ingredients h4 {
     padding: 0 0 1rem 0;
 }
-.ingredients li{
+
+.ingredients li {
     padding: 0.5rem;
 }
 
-h1{
+h1 {
     font-size: 4rem;
     padding: 1.5rem 0;
 }
 
-.container h2,h3,h4{
+.container h2, h3, h4 {
     text-align: center;
-    font-size:3rem;
+    font-size: 3rem;
 }
