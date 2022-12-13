@@ -24,13 +24,10 @@ const Main = () => {
   // }, [getFoods]);
 
   useEffect(() => {
-  fetch('http://localhost:3000/recepies').then(data => data.json()).then(data => setFoods(data)).then(console.log(foods))
+  fetch('https://cookbook-api-w7xc.onrender.com/recepies').then(data => data.json()).then(data => setFoods(data)).then(console.log(foods))
   }, [])
   
-// const getFetch = async ()=>{
-//   await fetch('http://localhost:3000/recepies').then(data => setRecepies(data.json()))
-// }
-// getFetch()
+  
   return (
     <div className="container" style={{background: "#FAF7F0"}}>
       <div className="slider">

@@ -15,7 +15,7 @@ function Head () {
    const navigate = useNavigate();
 
     useEffect(()=> 
-    {fetch('http://localhost:3000/recepies')
+    {fetch('https://cookbook-api-w7xc.onrender.com/recepies')
     .then(data => data.json())
         .then((res) => setfoodlist(res))
         }

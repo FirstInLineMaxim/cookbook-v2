@@ -14,7 +14,7 @@ export default function Upload () {
     <>
     <div className='form_container'>
     <h1>Content Model</h1>
-    <form method="POST" action="http://localhost:3000/upload" encType="multipart/form-data">
+    <form method="POST" action="https://cookbook-api-w7xc.onrender.com/upload" encType="multipart/form-data">
     <label htmlFor="title">Title:</label>
     <input type="text" name="title" placeholder="Title" maxLength="255" required/>
     <label htmlFor="description">Description:</label>

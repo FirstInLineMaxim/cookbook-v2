@@ -7,7 +7,7 @@ export default function Recommend() {
     const [food,SetFood] = useState(null)
     useEffect(() => {
         // set the foods here since it 's already an array
-        fetch('http://localhost:3000/recepies')
+        fetch('https://cookbook-api-w7xc.onrender.com/recepies')
         .then(data => data.json())
           .then((res) => { SetFood(res);
           })
