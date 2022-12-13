@@ -16,7 +16,7 @@ root.render(
       <Head />
       <Routes>
         <Route path="/cookbook-v2" element={<Main />} />
-        <Route path="thedevs" element={<TheDevs />} />
+        <Route path="cookbook-v2/thedevs" element={<TheDevs />} />
         <Route path="cookbook-v2/:food" element={<FoodItems />} />
         <Route path="cookbook-v2/upload" element={<Upload />} />
       </Routes>

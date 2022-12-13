@@ -13,7 +13,7 @@ export default function Footer() {
         <nav className='nav-container'>
           <a href='#' >About</a>
           <a href='#' >Contact</a>
-          <a href='#' >TheDev's</a>
+          <a href='cookbook-v2/thedevs' >TheDev's</a>
           <a href='#' >History</a>
           <a href='#' >AGB</a>
           <a href='#' >Policy</a>
