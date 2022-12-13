@@ -1,19 +1,24 @@
-.theDevs{
-    display:flex;
+.theDevs {
+    display: flex;
     justify-content: center;
 }
-.theTech{
-    padding:0.25rem 0;
+
+.theTech {
+    padding: 0.25rem 0;
 }
-.theMain{
+
+.theMain {
     text-align: center;
 }
-.theMain > h2{
+
+.theMain>h2 {
     font-size: 48px;
 }
-.h3{
+
+.h3 {
     font-size: 40px;
 }
-.h4{
-    font-size:32px;
+
+.h4 {
+    font-size: 32px;
 }

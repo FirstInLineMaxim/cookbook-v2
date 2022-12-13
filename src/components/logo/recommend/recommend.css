@@ -1,17 +1,18 @@
-.main_Card_Item{
+.main_Card_Item {
     display: flex;
-padding: 1rem;
-width: 80%;
-background-color: white;
-border-radius: 12px;
+    padding: 1rem;
+    width: 80%;
+    background-color: white;
+    border-radius: 12px;
 }
 
-.Card_Item_Image{
-display: flex;
-align-items: center;
-padding-right: 1rem;
+.Card_Item_Image {
+    display: flex;
+    align-items: center;
+    padding-right: 1rem;
 }
-.Card_Item_Image img{
+
+.Card_Item_Image img {
     /* width: 64px; */
     border-radius: 12px;
     width: 128px;
@@ -20,21 +21,22 @@ padding-right: 1rem;
 
 }
 
-.Card_Item_Desc h4{
+.Card_Item_Desc h4 {
     text-align: left;
     font-size: 26px;
 
 }
-.Card_Item_Desc{
+
+.Card_Item_Desc {
     max-height: 128px;
     overflow: hidden;
 }
 
-.Link{
+.Link {
     text-decoration: none;
 }
 
-.Card_Container21{
+.Card_Container21 {
     padding: 1rem;
     display: grid;
     gap: 1rem;

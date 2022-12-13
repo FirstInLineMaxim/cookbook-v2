@@ -3,23 +3,23 @@
 }
 
 .container {
-width: 100%;
+  width: 100%;
 }
 
 .slider {
- display: flex;
- justify-content: center;
- width: 100%;
- flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
-.slider > div {
-flex: 0 0 25%;
-width: 25%;
-/* just to make it have netflix feel */
-/* aspect-ratio: 16/9; */
-/* padding: 0.25rem; */
-/* padding: 2.0rem; */
+.slider>div {
+  flex: 0 0 25%;
+  width: 25%;
+  /* just to make it have netflix feel */
+  /* aspect-ratio: 16/9; */
+  /* padding: 0.25rem; */
+  /* padding: 2.0rem; */
 }
 
 .slider img {
